@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+
+        <!-- input type=hidden name='captcha_settings' value='{"keyname":"WebToLead2","fallback":"true","orgId":"00DD0000000pgLO","ts":""}' -->
+        <!-- input type=hidden name="oid" value="00DD0000000pgLO" -->
+        <!-- input type=hidden name="retURL" value="https://www.mrci.ie/contact-us-thank-you/" -->
+        
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+        <!--  these lines if you wish to test in debug mode.                          -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail"                                  -->
+        <!--  value="member@enclude.ie">                                         -->
+        <!--  ----------------------------------------------------------------------  -->
+        
+        <div class="criteria-check">
+            <div class="input-pair">
+                <input type="checkbox" id="undoc" name="" value=""><label for="undoc">I am undocumented</label></br>
+            </div>
+            <div class="input-pair">
+                <label for="time-undoc">By February 2022, I will have been undocumented for:</label></br>
+                <select id="time-undoc" name="">
+                    <option value="" disabled selected hidden>Choose length of time</option>
+                    <option value="">Less than 3 years</option>
+                    <option value="">3 years</option>
+                    <option value="">4 years</option>
+                    <option value="">More than 4 years</option>
+                </select></br>
+            </div>
+            <div class="input-pair">
+                <input type="checkbox" id="legal-permission" name="" value=""><label for="legal-permission">I have had legal permission at some point during this time</label></br>
+            </div>
+            <div class="input-pair">
+                <input type="checkbox" id="children" name="" value=""><label for="children">I have children in Ireland</label></br>
+            </div>
+            <div class="input-pair">
+                <input type="checkbox" id="DPO" name="" value=""><label for="DPO">I have a pending Deportation Order</label></br>
+            </div>
+        </div>
+        
+        <div class="flex-form">
+        <div class="flex-row-one">
+        <div class="flex-pair">
+        <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" required size="20" type="text" />
+        </div>
+        <div class="flex-pair">
+        <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+        </div>
+        </div>
+        <div class="flex-row-two">
+        <div class="flex-pair">
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" />
+        </div>
+        <div class="flex-pair">
+        <label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+        </div>
+        </div>
+        </div>
+        
+        <!-- This line is being commented out so people do not have to fill up company field,
+        <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+        Instead we are using now the hidden 'Company' filed (see below) prepopulated with value "Self" - this value can be changed to anything -->
+        
+        <input type=hidden id="lead_source" name="lead_source" value="JFU Reg Scheme Eligibility Form">
+        <input type=hidden name="company" value="[not provided]">
+        
+        <!-- Message:<textarea  id="00N4G000006CQHx" name="00N4G000006CQHx" type="text" wrap="soft" maxlength="1400"></textarea><br> -->
+        <br>
+        <input  id="00N4G000006CRM0" required name="00N4G000006CRM0" type="checkbox" value="1" /><label for="00N4G000006CRM0">&nbsp;Please tick to confirm you have read and accepted our <a href="https://www.mrci.ie/privacy/">privacy policy</a>. We keep your details safe and confidential and will not share them outside of MRCI.</label><br>
+        <br>
+        <input  id="00N4G000006PDR2" name="00N4G000006PDR2" type="checkbox" value="1" /><label for="00N4G000006PDR2">Tick this box to get email updates on how to take action with migrant workers and to hear about MRCI’s advocacy work, events and fundraising.</label><br>
+        <br>
+        <div class="JFU-submit">
+        <input type="submit" name="submit" value="Find out if you're eligible" style="width:100%" class="jfu-submit">
+        </div>
+        </form>
+        
+</body>
+</html>
