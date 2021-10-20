@@ -30,7 +30,7 @@ const ineligible = () => {
 }
 
 const eligibleLegal = () => {
-    console.log('eligible lega');
+    console.log('eligible legal');
     // redirect.value = 'https://www.mrci.ie/regularisation-scheme-2021-2022-eligible/';
     // campaign.value = '7014G000001nrM1';
     // campaignStatus.value = 'Eligible Legal';
