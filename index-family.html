@@ -1,0 +1,131 @@
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+    <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead2","fallback":"true","orgId":"00DD0000000pgLO","ts":""}'>
+    <input type=hidden name="oid" value="00DD0000000pgLO">
+    <input class="redirect" type=hidden name="retURL" value="">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="member@enclude.ie">                                              -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <div class="criteria-check">
+            <div class="input-pair">
+                <input type="checkbox" id="undoc" name="00N4G000006znSS" value="Undocumented"><label for="undoc">I am undocumented</label></br>
+            </div>
+        <div class="undoc-question">
+            <div class="input-pair">
+                <label class="label-no-indent" for="time-undoc">By January 2022, I will have been undocumented for:</label></br>
+                <select id="time-undoc" name="00N4G000006znSm">
+                    <option value="" disabled selected hidden>Choose length of time</option>
+                    <option value="Less than 3 years">Less than 3 years</option>
+                    <option value="3-4 years">Between 3 and 4 years</option>
+                    <option value="4 years or more">4 years or more</option>
+                </select></br>
+            </div>
+        </div>
+        <div class="undoc-out">
+            <div class="input-pair">
+                <label class="label-no-indent" for="legal-permission">During my time being undocumented, I left Ireland for</label></br>
+                <select id="legal-permission" name="00N4G000006zqBZ">
+                    <option value="" disabled selected hidden>Choose length of time</option>
+                    <option value="Less than 60 days">Less than 60 days</option>
+                    <option value="More than 60 days">More than 60 days</option>
+                    <option value="Did not leave Ireland">No time, I did not leave Ireland while undocumented</option>
+                </select></br>
+            </div>
+        </div>
+        <div class="undoc-return">
+            <div class="input-pair">
+                <label class="label-no-indent" for="legal-permission-return">When I returned to Ireland, I had</label></br>
+                <select id="legal-permission-return" name="00N4G000006znSc">
+                    <option value="" disabled selected hidden>Choose length of time</option>
+                    <option value="Less than 90 days">Short-term tourist permission for 90 days or less</option>
+                    <option value="More than 90 days">Legal permission for more than 90 days</option>
+                    <option value="No status">No status, I was undocumented after returning to Ireland</option>
+            </select></br>
+            </div>
+        </div>
+        <div class="input-pair">
+        <label class="label-no-indent" for="dob">My date of birth is:</label></br>
+        <input type="date" value="" id="dob" name="00N4G000006zr9t">
+        </div>
+        <p class="warning-young">IMPORTANT: To qualify, you must be included in a parent or family member's application as the scheme is only open to people over 18 years old.</p>
+        <div class="input-pair parents">
+        <input id="parents" name="00N4G000006zqJi" type="checkbox" value="1" /><label for="parents">I live with a partner or parent(s) who are undocumented in Ireland</label></br>
+        </div>
+        <div class="input-pair parents-time-undoc">
+            <label class="label-no-indent" for="parents-time-undoc">By January 2022, my partner / parent(s) will have been undocumented for:</label></br>
+            <select id="parents-time-undoc" name="00N4G000006zqJY">
+                <option value="" disabled selected hidden>Choose length of time</option>
+                <option value="Less than 3 years">Less than 3 years</option>
+                <option value="3-4 years">Between 3 and 4 years</option>
+                <option value="4 years or more">4 years or more</option>
+            </select></br>
+        </div>
+        <div class="input-pair siblings">
+            <input id="siblings" name="00N4G000006zqBo" type="checkbox" value="1" /><label for="siblings">I live with brothers and/or sisters who are under 18 years old</label></br>
+        </div>
+        <div class="input-pair children">
+            <input id="children" name="00N4G000006znRA" type="checkbox" value="1" /><label for="children">I have children under 18 years old living with me in Ireland</label></br>
+        </div>
+        <div class="input-pair">
+            <input type="checkbox" id="DPO" name="00N4G000006znSI" value="1"><label for="DPO">I have a pending Deportation Order or application under Section 3</label></br>
+        </div>
+        <div class="input-pair">
+        <input id="minor-crime" name="00N4G000006zqBy" type="checkbox" value="1" /><label for="minor-crime">I have a minor criminal conviction</label></br>
+        </div>
+        <div class="input-pair">
+        <input id="major-crime" name="00N4G000006zqC8" type="checkbox" value="1" /><label for="major-crime">I have a major criminal conviction</label></br>
+        </div>
+        </div>
+        
+        <div class="form-container">
+        <div class="flex-form">
+        <div class="flex-row-one">
+        <div class="flex-pair">
+            <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" required size="20" type="text" />
+        </div>
+        <div class="flex-pair">
+            <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+        </div>
+        </div>
+        <div class="flex-row-two">
+        <div class="flex-pair">
+            <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" />
+        </div>
+        <div class="flex-pair">
+            <label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+        </div>
+        </div>
+        </div>
+        
+        <!-- This line is being commented out so people do not have to fill up company field,
+        <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+        Instead we are using now the hidden 'Company' filed (see below) prepopulated with value "Self" - this value can be changed to anything -->
+        
+        <input type=hidden id="lead_source" name="lead_source" value="JFU Eligibility WebForm">
+        <input type=hidden name="company" value="[not provided]">
+        <input type=hidden id="campaign" name="Campaign_ID" value=""> 
+        <input type="hidden"  id="member_status" name="member_status" value="" />
+        
+        <!-- Message:<textarea  id="00N4G000006CQHx" name="00N4G000006CQHx" type="text" wrap="soft" maxlength="1400"></textarea><br> -->
+        <br>
+        <input  id="00N4G000006CRM0" required name="00N4G000006CRM0" type="checkbox" value="1" /><label for="00N4G000006CRM0">&nbsp;Please tick to confirm you have read and accepted our <a href="https://www.mrci.ie/privacy/">privacy policy</a>. We keep your details safe and confidential. We will not share them outside of MRCI.</label><br>
+        <br>
+        Sign up to receive updates about the scheme:</br>
+        <div class="radio-indent">
+        <input id="option-yes" name="00N4G000006PDR2" value="1" type="radio" checked="checked" required><label for="option-yes">&nbsp;<strong>Yes</strong>, I want to hear updates about the scheme & MRCI's work.</label></br>
+        <input id="option-no" name="00N4G000006PDR2" value="0" type="radio"><label for="option-no">&nbsp;<strong>No</strong>, I don't want to receive any information from MRCI.</label></br>
+        </br>
+        </div>
+        
+        <div class="g-recaptcha" data-sitekey="6LcU1dEUAAAAALuK2aCaCUTFrPOcnm6cX-P9iF2h"></div><br>
+        
+        <input type="submit" name="submit" value="Find out if you’re eligible" class="jfu-submit" style="width:100%">
+    </div>
+</form>
+    
