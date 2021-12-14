@@ -127,14 +127,14 @@ parentsTimeUndocCheck.addEventListener('change', (e) => {
 
 // redirecting URLs based on eligibility 
 const eligible = () => {
-    redirect.value = 'https://www.mrci.ie/';
+    redirect.value = 'https://www.mrci.ie/scheme21-eligible/';
     campaign.value = '7014G000001nrM1';
     campaignStatus.value = 'Likely Eligible';
 }
 
 const ineligible = () => {
     console.log('ineligible');
-    redirect.value = 'https://www.mrci.ie/donate';
+    redirect.value = 'https://www.mrci.ie/scheme21-ineligible/';
     campaign.value = '7014G000001nrM6';
     campaignStatus.value = 'Likely Ineligible';
 }
